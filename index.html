@@ -60,7 +60,7 @@
                                 <use href="./images/icons.svg#close-button"></use>
                             </svg>
                         </button>
-                        <form class="register-form" name="register-form" autocomplete="off" novalidate>
+                        <form class="register-form" name="register-form">
                             <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
                             <div class=register-form-group role="group">
                                     <label class="register-label" for="user-name">
@@ -86,11 +86,11 @@
                                     </label>
                                     <label class="register-label" for="comment">
                                         <span class="label-title">Коментар</span>
-                                        <textarea class="label-comment" name="comment" rows="5" placeholder="Введіть текст"></textarea>
+                                        <textarea class="label-comment" name="comment" rows="5" placeholder="Введіть текст" id="comment"></textarea>
                                     </label>
                             </div>
                                 <label class="label-agreement" for="agreement">
-                                    <input class="agreement-input visually-hidden" type="checkbox" name="agreement" value="accept">
+                                    <input class="agreement-input visually-hidden" type="checkbox" name="agreement" value="accept" id="agreement">
                                     <svg class="agreement-icon" width="16" height="15">
                                         <use class="tick-unchecked" href="./images/icons.svg#tick-unchecked"></use>
                                         <use class="tick-checked" href="./images/icons.svg#tick-checked"></use>
@@ -514,9 +514,9 @@
             </div>
             <div class="footer-form">
                 <p class="subscribe-title">Підпишіться на розсилку</p>
-                <form class="subscribe-form" name="subscribe-form" autocomplete="off" novalidate>
-                    <label class="subscribe-label" for="email">
-                        <input class="subscribe-input" type="email" name="email" id="email" required placeholder="E-mail"/>
+                <form class="subscribe-form" name="subscribe-form">
+                    <label class="subscribe-label" for="subscribe">
+                        <input class="subscribe-input" type="email" name="subscribe" id="subscribe" required placeholder="E-mail"/>
                     </label>
                     <button class="btn pointer" type="submit">
                         Підписатися
